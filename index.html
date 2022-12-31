@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GenZ Horoscope</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin">
+    <link rel="stylesheet" href="main.css">
+    <script src="translate.js"></script>
+</head>
+
+<body>
+
+    <div id="title">
+        <div id="home">
+            <div id="keys">
+                <p id="heading">GenZ<br>Horoscope</p>
+                <p class="jumpto" >> <button class="jumps" onClick="document.getElementById('about-head').scrollIntoView()">About</button></p>
+                <p class="jumpto" >> <button class="jumps" onClick="document.getElementById('horoscope-head').scrollIntoView()">Horoscope</button></p>
+                <p class="jumpto" >> <button class="jumps" onClick="document.getElementById('github').scrollIntoView()">Support</button></p>
+            </div>
+            <img id="logo" src="assets/logos/zodiac-wheel.png">
+        </div>
+        <div id="curve"> </div>
+    </div>
+
+    <div id="bg"> 
+
+    <div id="center">
+        <p class="reveal" id="about-head">About</p>
+        <p class="reveal" id="about-content">Horoscope has existed for an extremely long time and even till date several people have a strong trust in it. However, it is usually depicted in a very old fashioned way with extremely sensitive language. Hence, GenZ Horoscope was created to provide GenZ with their perfect horoscope in their own common language.</p>
+        <p class="reveal" id="horoscope-head">Horoscope</p>
+    </div>
+
+    <img class="big-img" id="Aries" src="assets/signs/aries.png">
+    <img class="big-img" id="Taurus" src="assets/signs/taurus.png">
+    <img class="big-img" id="Gemini" src="assets/signs/gemini.png">
+    <img class="big-img" id="Cancer" src="assets/signs/cancer.png">
+    <img class="big-img" id="Leo" src="assets/signs/leo.png">
+    <img class="big-img" id="Virgo" src="assets/signs/virgo.png">
+    <img class="big-img" id="Libra" src="assets/signs/libra.png">
+    <img class="big-img" id="Scorpio" src="assets/signs/scorpio.png">
+    <img class="big-img" id="Sagittarius" src="assets/signs/sagittarius.png">
+    <img class="big-img" id="Capricorn" src="assets/signs/capricorn.png">
+    <img class="big-img" id="Pisces" src="assets/signs/pisces.png">
+    <img class="big-img" id="Aquarius" src="assets/signs/aquarius.png">
+
+    <div id="down" class="down reveal">
+        
+        <div class="left">
+            <div class="select">
+                <button onclick="showZodiacContent()" class="selectbtn" id="selectbtn">Zodiac Sign</button>
+                <div class="select-content" id="select-content">
+                    <button onclick="selectZodiac('Aries')">Aries</button>
+                    <button onclick="selectZodiac('Taurus')">Taurus</button>
+                    <button onclick="selectZodiac('Gemini')">Gemini</button>
+                    <button onclick="selectZodiac('Cancer')">Cancer</button>
+                    <button onclick="selectZodiac('Leo')">Leo</button>
+                    <button onclick="selectZodiac('Virgo')">Virgo</button>
+                    <button onclick="selectZodiac('Libra')">Libra</button>
+                    <button onclick="selectZodiac('Scorpio')">Scorpio</button>
+                    <button onclick="selectZodiac('Sagittarius')">Sagittarius</button>
+                    <button onclick="selectZodiac('Capricorn')">Capricorn</button>
+                    <button onclick="selectZodiac('Aquarius')">Aquarius</button>
+                    <button onclick="selectZodiac('Pisces')">Pisces</button>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="date">
+                <button onclick="showDateContent()" class="datebtn" id="datebtn">Date</button>
+                <div class="date-content" id="date-content">
+                    <button onclick="selectDate('Today')">Today</button>
+                    <button onclick="selectDate('Tomorrow')">Tomorrow</button>
+                    <button onclick="selectDate('Yesterday')">Yesterday</button>
+                </div>
+            </div>
+        </div>
+
+        <p id="guide">Select your Zodiac Sign and Date from the box given!</p>
+
+        <div class="right">
+            <div class="horoscope" id="horoscope">
+                <p class="horoscope-text">description</p>
+                <p class="horoscope-text">color</p>
+                <p class="horoscope-text">compatibility</p>
+                <p class="horoscope-text">mood</p>
+                <p class="horoscope-text">lucky-number</p>
+                <p class="horoscope-text">lucky-time</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="reveal">
+        <div id="sign-images-1">
+            <img class="sign-images" src="assets/signs/aries.png">
+            <img class="sign-images" src="assets/signs/taurus.png">
+            <img class="sign-images" src="assets/signs/gemini.png">
+            <img class="sign-images" src="assets/signs/cancer.png">
+            <img class="sign-images" src="assets/signs/leo.png">
+            <img class="sign-images" src="assets/signs/virgo.png">
+        </div>
+
+        <div id="sign-images-2">
+            <img class="sign-images" src="assets/signs/libra.png">
+            <img class="sign-images" src="assets/signs/scorpio.png">
+            <img class="sign-images" src="assets/signs/sagittarius.png">
+            <img class="sign-images" src="assets/signs/capricorn.png">
+            <img class="sign-images" src="assets/signs/pisces.png">
+            <img class="sign-images" src="assets/signs/aquarius.png">
+        </div>
+    </div>
+    </div>
+
+    <div id="filler-bg"> </div>
+
+    <div class="footer">
+        <div class="github">            
+            <a href="https://github.com/ota0912/Genz-Horoscope/" target="_blank"><img id="github" src="assets/logos/github.png"></a>
+        </div> 
+        <p id="support">Support us by starring the <br>GitHub Repo</p> 
+        <div class="copyright-content">
+            <p id="footer-logo">GenZ Horoscope</p>
+            <p id="copyright">Copyright © 2022 OTA</p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
