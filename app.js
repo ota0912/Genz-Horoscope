@@ -30,10 +30,8 @@ function selectZodiac(sign) {
     })
       .then(response => response.json())
       .then(json => {
-
         showHoroscope(json, sign);
-
-      });
+    });
   }
 }
 
