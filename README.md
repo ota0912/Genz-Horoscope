@@ -19,7 +19,6 @@ Basic Horoscope is obtained using the [Aztro api](https://github.com/sameerkumar
 - HTML
 - CSS
 - Javascript
-- Jquery
 
 # Asset Credits
 - [Home Area Background](assets/bgs/home-bg.jpg) was provided by [benzoix on freepik](https://www.freepik.com/free-photo/abstract-grunge-decorative-relief-navy-blue-stucco-wall-texture-wide-angle-rough-colored-background_11712554.htm)
