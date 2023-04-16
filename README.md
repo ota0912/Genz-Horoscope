@@ -1,6 +1,7 @@
 <div align="center">
   
 # Genz Horoscope
+<img src="./media/screenshot.png" width="50%">
 </div>
 
 ## About
